@@ -1,0 +1,66 @@
+.Categories{
+    margin-right: 1vw;
+    height: 192px;
+}
+.Categories:hover{
+    cursor: pointer;
+}
+.Categories img{
+    z-index: 10;
+}
+.Paragraph{
+    pointer-events: none;
+    opacity: 0;
+}
+.Categories:hover .Paragraph{
+    pointer-events: all;
+    opacity: 1;
+    position: relative;
+    margin-top: -222px;
+    height: 100%;
+    padding: 1vw;
+    color: white;
+    background-color: rgba(20, 20, 20, 0.8);
+    z-index: 30;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.Categories button{
+    position: relative;
+    font-size: 1vw;
+    border: solid 1px rgb(230, 230, 230);
+    background-color: rgba(20, 20, 20, 0.5);
+    color: rgb(230, 230, 230);
+    padding:  1vw;
+    margin-right: 0.7vw;
+    text-align: center;
+}
+.Categories button:hover{
+    cursor: pointer;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+@media (max-width: 500px){
+    .Categories{
+        margin-right: 2vw;
+    }
+    .Categories:hover .Paragraph{
+        height: 110%;
+        padding: 4vw;
+    }
+    .Categories button{
+        font-size: 4vw;
+        margin-right: 2vw;
+        padding: 1vw 2vw 1vw 2vw;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px){
+    .Categories button{
+        font-size: 2.5vw;
+    }
+    .Categories:hover .Paragraph{
+        height: 115%;
+    }
+}
+

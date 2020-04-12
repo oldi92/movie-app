@@ -1,0 +1,51 @@
+{
+    "theOtherBoys": {
+        "id" : 1,
+        "title" : "The Other Guys",
+        "body" : "Two mismatched New York City detectives seize an opportunity to step up like the city's top cops, whom they idolize, only things don't quite go as planned.",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2Fthe%20other%20guys.jpg?alt=media&token=977c8625-6056-4752-a87a-f802be60c032",
+        "key" : "theOtherBoys",
+        "category" : "action"
+    },
+    "badBoys": {
+        "id" : 2,
+        "title" : "Bad Boys",
+        "body" : "Two hip detectives protect a witness to a murder while investigating a case of stolen heroin from the evidence storage room from their police precinct.",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FBadboys.jpg?alt=media&token=bf895020-0292-47f8-a11d-904e75e186be",
+        "key" : "badBoys",
+        "category" : "action"
+    },
+    "unbroken": {
+        "id" : 3,
+        "title" : "Unbroken",
+        "body" : "After a near-fatal plane crash in wwii, Olympian Louis Zamperini spends a harrowing 47 days in a raft with two fellow crewmen before he's caught.",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FUnbroken.jpg?alt=media&token=f30069f2-861f-42da-8cb7-1f7a715698c3",
+        "key" : "unbroken",
+        "category" : "action"
+    },
+    "kingsMan": {
+        "id" : 4,
+        "title" : "Kingsman: The Secret Service",
+        "body" : "A spy organisation recruits a promising street kid into the agency's training program, while a global threat emerges from a twisted tech genius.",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FKingsMan.jpg?alt=media&token=b0a4eb43-492e-470e-b2d7-a8d022c50edb",
+        "key" : "kingsMan",
+        "category" : "action"
+    },
+    "robinHood": {
+        "id" : 5,
+        "title" : "Robin Hood",
+        "body" : "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FRobin%20hood.png?alt=media&token=d7f1d32e-126b-4c92-b78e-ea1d22e5cb95",
+        "key" : "robinHood",
+        "category" : "action"
+    },
+    "jumanji": {
+        "id" : 5,
+        "title" : "Jumanji: The Next Level",
+        "body" : "In Jumanji: The Next Level, the gang is back but the game has changed. As they return to rescue one of their own.",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FJumanji.jpg?alt=media&token=5d3c195d-b92f-4ba1-ac93-f26babbfedfe",
+        "key" : "jumanji",
+        "category" : "action"
+    }
+    
+}

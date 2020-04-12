@@ -1,0 +1,122 @@
+.Navigation{
+    top: 0;
+    width: 92%;
+    background-color: rgba(red, green, blue, 0.0);
+    color: white;
+    display: flex;
+    padding: 1vw 4vw 1vw 4vw;
+    position: fixed;
+    z-index: 10;
+    box-shadow: inset 0px 50px 15px -1px rgba(0,0,0,0.54);
+}
+.Navigation img {
+    width: 3vw;
+    padding-right: 5vw;
+}
+.Navigation img:hover{
+    cursor: pointer;
+}
+.Navigation ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+.Navigation ul li{
+    margin: 1vw 3vw 0 0;
+    font-size: 1.2vw;
+}
+.Navigation ul li:hover{
+    cursor: pointer;
+    color: rgb(200, 200, 200);
+}
+.Search{
+    width: 12vw;
+    height: 100%;
+}
+.Search div{
+    display: flex;
+    padding: 0.6vw;
+    float: right; 
+    width: 40%;
+    color: rgb(200, 200, 200);
+    transition: all 0.3s  ease-out; 
+}
+.Search div:hover{
+    border: solid 0.15vw white;
+    border-radius: 15px;
+    width: 100%;
+}
+.Search div input {
+    padding-left: 0.3vw;
+    font-size: 1vw;
+    border: none;
+    opacity: 0;
+    background-color: rgba(20, 20, 20, 0.0);
+    color: white;
+    width: 80%;
+    transition: all 0.3s  ease-out; 
+}
+.Search div input:focus{
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    outline: none;
+}
+.Search div input:hover{
+    width: 80%;
+    opacity: 1;
+}
+
+@media (max-width: 500px){
+    .Navigation {
+        height: 10vw;
+        padding: 1vw 4vw 1vw 4vw;
+    }
+    .Navigation img {
+        width: 8vw;
+        padding-right: 0;
+    }.Navigation ul{
+        margin: 2vw 0 0 3vw;
+    }
+    .Navigation ul li{
+        font-size: 4vw;
+        margin: 2vw 4vw 0 1.5vw;
+    }
+    .Navigation ul li:hover{
+        width: 100%;
+    }
+
+    .Search{
+        margin-left: 2vw;
+        width: 27vw;
+        height: 100%;
+        margin-top: 3vw;
+    }
+    .Search div{
+        padding: 1vw 3vw 1vw 1.5vw;
+    }
+    .Search div input {
+        font-size: 3vw;
+    }
+    
+}
+
+@media (min-width: 501px) and (max-width: 1000px){
+    .Navigation img {
+        width: 6vw;
+    }
+    .Navigation ul li{
+        font-size: 2vw;
+        margin: 2vw 4.8vw 0 1.5vw;
+    }
+    .Search{
+        width: 15vw;
+        height: 100%;
+    }
+    .Search div input {
+        font-size: 2vw;
+    }
+    .Search div{
+        padding: 1.5vw 1vw 1vw 1vw;
+    }    
+}

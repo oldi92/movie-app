@@ -1,0 +1,61 @@
+.Featured {
+    width: 100%;
+    top: 0;
+    color: rgb(230, 230, 230);
+}
+.Featured img {
+    top: 0;
+    width: 100%;
+    margin-left: -4vw;
+}
+.Paragraph {
+    margin-top: -35vw;
+    width: 30%;
+}
+.Paragraph button {
+    position: relative;
+    font-size: 1vw;
+    border: solid 1px rgb(230, 230, 230);
+    padding: 1vw;
+    color: rgb(230, 230, 230);
+    background-color: rgba(150, 150, 150, 0);
+}
+.Paragraph button:hover {
+    cursor: pointer;
+    background-color: rgba(230, 230, 230, 0.4);
+}
+
+@media (max-width: 500px){
+    
+    .Featured img {
+        width: auto;
+        height: 90vw;
+        margin-left: -60vw;
+    }
+    .Featured h2{
+        font-size: 5vw;
+    }
+    .Paragraph{
+        position: relative;
+        overflow-y: hidden;
+        margin-top: -33vw;
+        margin-left: 10vw;
+    }
+    .Paragraph p{
+        display: none;
+    }
+    .Paragraph button {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+}
+@media (min-width: 501px) and (max-width: 1000px){
+    .Featured img {
+        width: auto;
+        height: 70vw;
+        margin-left: -21vw;
+    }
+    .Paragraph button{
+        font-size: 2.5vw
+    }
+}
