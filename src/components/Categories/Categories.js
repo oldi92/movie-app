@@ -1,28 +1,37 @@
-import React from 'react'; 
+import React from "react";
 
-import classes from './Categories.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfo, faPlay } from '@fortawesome/free-solid-svg-icons';
+import classes from "./Categories.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const Categories = (props) => {
-    return(
+  return (
     <li className={classes.Categories}>
-        <img src={props.image} alt='actions Images'  />   
-        <div class={classes.Paragraph}>
-             <h3>{props.title}</h3>   
-             <p>{props.body}</p>
-             <div>
-             <button><FontAwesomeIcon icon={faPlay} size='1x' style={{paddingRight: '0.5vw'}}/>Play</button>             
-             <button><FontAwesomeIcon icon={faInfo} size='1x' style={{paddingRight: '0.5vw'}}/>Info</button>
-             </div>
-            </div>    
+      <img src={props.image} alt="actions Images" />
+      <div className={classes.Paragraph}>
+        <h3>{props.title}</h3>
+        <p>{props.body}</p>
+        <div>
+          <button>
+            <FontAwesomeIcon
+              icon={faPlay}
+              size="1x"
+              style={{ paddingRight: "0.5vw" }}
+            />
+            Play
+          </button>
+          <button onClick={props.onClick}>
+            <FontAwesomeIcon
+              icon={faInfo}
+              size="1x"
+              style={{ paddingRight: "0.5vw" }}
+            />
+            Info
+          </button>
+        </div>
+      </div>
     </li>
-    )
-}
+  );
+};
 
-export default Categories
-
-/* style={{
-               backgroundImage :`url(${props.image})`,
-               backgroundSize: 'cover'
-                }}>*/
+export default Categories;

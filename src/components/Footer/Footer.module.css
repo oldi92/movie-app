@@ -1,0 +1,30 @@
+.Footer {
+  color: #808080;
+  padding: 5vw 2vw 5vw 2vw;
+  text-align: center;
+  margin-left: -7vw;
+}
+.Main {
+  display: inline-flex;
+}
+.FooterNav {
+  list-style: none;
+  display: inline-flex;
+  margin: auto;
+  margin-left: -2vw;
+}
+.FooterNav li {
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+  border-right: solid 1px #808080;
+}
+.FooterNav li:hover {
+  cursor: pointer;
+}
+.FooterNav li:last-child {
+  border-right: none;
+}
+.Copyright {
+  margin-top: 2vw;
+  font-size: 0.8vw;
+}

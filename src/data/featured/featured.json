@@ -1,30 +1,46 @@
 {
-    "moneyHeist" : {
-        "id" : 1,
-            "title": "Money Heist",
-            "body" : "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
-            "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FMoney%20Heist.jpg?alt=media&token=0c6ca5bb-4e39-430e-86cb-fc3704946bd8",
-            "key" : "moneyHeist"
-    },
-    "loveWeddingReapeat" : {
-        "id" : 2,
-            "title": "Love. Wedding. Reapeat",
-            "body" : "While trying to make his sister's wedding day go smoothly, Jack finds himself juggling an angry ex-girlfriend, an uninvited guest with a secret, a misplaced sleep sedative, and the girl that got away in alternate versions of the same day.",
-            "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FLove.%20Wedding.%20Repeat.jpg?alt=media&token=496c232b-aa2d-4862-8e3a-eb976ee96750",
-            "key" : "loveWeddingReapeat"
-    },
-    "thePlatform" : {
-        "id" : 3,
-            "title": "The PlatForm",
-            "body" : "A vertical prison with one cell per level. Two people per cell. One only food platform and two minutes per day to feed from up to down. An endless nightmare trapped in The Hole.",
-            "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FThe%20Platform%202019.jpg?alt=media&token=d12733ce-8c00-4ee6-b255-9c3043da835e",
-            "key" : "thePlarform"
-    },
-    "outlawKing " : {
-        "id" : 4,
-            "title": "Outlaw King ",
-            "body" : "A true David vs. Goliath story of how the 14th century Scottish 'Outlaw King' Robert the Bruce used cunning and bravery to defeat the much larger and better equipped occupying English army",
-            "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FOutlaw%20King%202018.jpg?alt=media&token=28d043fe-c25b-4e63-89d2-e3ae1f9f59f3",
-            "key" : "outlawKing"
-    }
+  "moneyHeist": {
+    "id": 1,
+    "title": "Money Heist",
+    "body": "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history stealing 2.4 billion euros from the Royal Mint of Spain.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FMoney%20Heist.jpg?alt=media&token=0c6ca5bb-4e39-430e-86cb-fc3704946bd8",
+    "key": "moneyHeist",
+    "category": "action",
+    "duration": "1h 10min",
+    "rate": "8,5",
+    "trailer": "p_PJbmrX4uk"
+  },
+  "loveWeddingReapeat": {
+    "id": 2,
+    "title": "Love. Wedding. Reapeat",
+    "body": "While trying to make his sister's wedding day go smoothly, Jack finds himself juggling an angry ex-girlfriend, an uninvited guest with a secret, a misplaced sleep sedative, and the girl that got away in alternate versions of the same day.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FLove.%20Wedding.%20Repeat.jpg?alt=media&token=496c232b-aa2d-4862-8e3a-eb976ee96750",
+    "key": "loveWeddingReapeat",
+    "category": "comedy",
+    "duration": "1h 40min",
+    "rate": "5,6",
+    "trailer": "x6CyqhYsLqo"
+  },
+  "thePlatform": {
+    "id": 3,
+    "title": "The PlatForm",
+    "body": "A vertical prison with one cell per level. Two people per cell. One only food platform and two minutes per day to feed from up to down. An endless nightmare trapped in The Hole.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FThe%20Platform%202019.jpg?alt=media&token=d12733ce-8c00-4ee6-b255-9c3043da835e",
+    "key": "thePlatform",
+    "category": "thriller",
+    "duration": "1h 36min",
+    "rate": "7,0",
+    "trailer": "RlfooqeZcdY"
+  },
+  "outlawKing ": {
+    "id": 4,
+    "title": "Outlaw King ",
+    "body": "A true David vs. Goliath story of how the 14th century Scottish 'Outlaw King' Robert the Bruce used cunning and bravery to defeat the much larger and better equipped occupying English army",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FOutlaw%20King%202018.jpg?alt=media&token=28d043fe-c25b-4e63-89d2-e3ae1f9f59f3",
+    "key": "outlawKing",
+    "category": "drama",
+    "duration": "2h 1min",
+    "rate": "6,9",
+    "trailer": "Q-G1BME8FKw"
+  }
 }

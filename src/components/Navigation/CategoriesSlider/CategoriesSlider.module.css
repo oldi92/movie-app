@@ -1,0 +1,14 @@
+.CategoriesSlider {
+  position: absolute;
+  color: rgb(230, 230, 330);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+.CategoriesSlider li:hover {
+  border-radius: 5px;
+  transition: all 0.2s;
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+}

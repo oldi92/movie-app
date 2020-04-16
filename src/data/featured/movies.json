@@ -1,51 +1,266 @@
 {
-    "theOtherBoys": {
-        "id" : 1,
-        "title" : "The Other Guys",
-        "body" : "Two mismatched New York City detectives seize an opportunity to step up like the city's top cops, whom they idolize, only things don't quite go as planned.",
-        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2Fthe%20other%20guys.jpg?alt=media&token=977c8625-6056-4752-a87a-f802be60c032",
-        "key" : "theOtherBoys",
-        "category" : "action"
-    },
-    "badBoys": {
-        "id" : 2,
-        "title" : "Bad Boys",
-        "body" : "Two hip detectives protect a witness to a murder while investigating a case of stolen heroin from the evidence storage room from their police precinct.",
-        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FBadboys.jpg?alt=media&token=bf895020-0292-47f8-a11d-904e75e186be",
-        "key" : "badBoys",
-        "category" : "action"
-    },
-    "unbroken": {
-        "id" : 3,
-        "title" : "Unbroken",
-        "body" : "After a near-fatal plane crash in wwii, Olympian Louis Zamperini spends a harrowing 47 days in a raft with two fellow crewmen before he's caught.",
-        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FUnbroken.jpg?alt=media&token=f30069f2-861f-42da-8cb7-1f7a715698c3",
-        "key" : "unbroken",
-        "category" : "action"
-    },
-    "kingsMan": {
-        "id" : 4,
-        "title" : "Kingsman: The Secret Service",
-        "body" : "A spy organisation recruits a promising street kid into the agency's training program, while a global threat emerges from a twisted tech genius.",
-        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FKingsMan.jpg?alt=media&token=b0a4eb43-492e-470e-b2d7-a8d022c50edb",
-        "key" : "kingsMan",
-        "category" : "action"
-    },
-    "robinHood": {
-        "id" : 5,
-        "title" : "Robin Hood",
-        "body" : "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.",
-        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FRobin%20hood.png?alt=media&token=d7f1d32e-126b-4c92-b78e-ea1d22e5cb95",
-        "key" : "robinHood",
-        "category" : "action"
-    },
-    "jumanji": {
-        "id" : 5,
-        "title" : "Jumanji: The Next Level",
-        "body" : "In Jumanji: The Next Level, the gang is back but the game has changed. As they return to rescue one of their own.",
-        "img" : "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FJumanji.jpg?alt=media&token=5d3c195d-b92f-4ba1-ac93-f26babbfedfe",
-        "key" : "jumanji",
-        "category" : "action"
-    }
-    
+  "theOtherBoys": {
+    "id": 1,
+    "title": "The Other Guys",
+    "body": "Two mismatched New York City detectives seize an opportunity to step up like the city's top cops, whom they idolize, only things don't quite go as planned.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2Fthe%20other%20guys.jpg?alt=media&token=977c8625-6056-4752-a87a-f802be60c032",
+    "key": "theOtherBoys",
+    "category": "action",
+    "duration": "1h 48min",
+    "rate": "5",
+    "trailer": "D6WOoUG1eNo"
+  },
+  "badBoys": {
+    "id": 2,
+    "title": "Bad Boys",
+    "body": "Two hip detectives protect a witness to a murder while investigating a case of stolen heroin from the evidence storage room from their police precinct.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FBadboys.jpg?alt=media&token=bf895020-0292-47f8-a11d-904e75e186be",
+    "key": "badBoys",
+    "category": "action",
+    "duration": "1h 40min",
+    "rate": "5,6",
+    "trailer": "jKCj3XuPG8M"
+  },
+  "unbroken": {
+    "id": 3,
+    "title": "Unbroken",
+    "body": "After a near-fatal plane crash in wwii, Olympian Louis Zamperini spends a harrowing 47 days in a raft with two fellow crewmen before he's caught.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FUnbroken.jpg?alt=media&token=f30069f2-861f-42da-8cb7-1f7a715698c3",
+    "key": "unbroken",
+    "category": "action",
+    "duration": "1h 30min",
+    "rate": "7,2",
+    "trailer": "XrjJbl7kRrI"
+  },
+  "kingsMan": {
+    "id": 4,
+    "title": "Kingsman: The Secret Service",
+    "body": "A spy organisation recruits a promising street kid into the agency's training program, while a global threat emerges from a twisted tech genius.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FKingsMan.jpg?alt=media&token=b0a4eb43-492e-470e-b2d7-a8d022c50edb",
+    "key": "kingsMan",
+    "category": "action",
+    "duration": "1h 56min",
+    "rate": "7,4",
+    "trailer": "kl8F-8tR8to"
+  },
+  "robinHood": {
+    "id": 5,
+    "title": "Robin Hood",
+    "body": "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FRobin%20hood.png?alt=media&token=d7f1d32e-126b-4c92-b78e-ea1d22e5cb95",
+    "key": "robinHood",
+    "category": "action",
+    "duration": "1h 32min",
+    "rate": "6,3",
+    "trailer": "NXfjRgc8Dls"
+  },
+  "jumanji": {
+    "id": 6,
+    "title": "Jumanji: The Next Level",
+    "body": "In Jumanji: The Next Level, the gang is back but the game has changed. As they return to rescue one of their own.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FJumanji.jpg?alt=media&token=5d3c195d-b92f-4ba1-ac93-f26babbfedfe",
+    "key": "jumanji",
+    "category": "action",
+    "duration": "1h 43min",
+    "rate": "6",
+    "trailer": "rBxcF-r9Ibs"
+  },
+  "spenser confidential": {
+    "id": 7,
+    "title": "Spenser Confidential",
+    "body": "When two Boston police officers are murdered, ex-cop Spenser teams up with his no-nonsense roommate, Hawk, to take down criminals.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FSpenser%20Confidential.jpg?alt=media&token=842889a3-5f2d-412e-a527-daadfc0ff7c5",
+    "key": "spenser confidiential",
+    "category": "comedy",
+    "duration": "1h 51min",
+    "rate": "6,2",
+    "trailer": "bgKEoHNi3Uc"
+  },
+  "the dictator": {
+    "id": 8,
+    "title": "The Dictator",
+    "body": "The heroic story of a dictator who risked his life to ensure that democracy would never come to the country he so lovingly oppressed.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FThe%20Dictator.jpg?alt=media&token=86f39546-5735-4fce-b298-c501aa752842",
+    "key": "the dictator",
+    "category": "comedy",
+    "duration": "1h 23min",
+    "rate": "6,4",
+    "trailer": "cYplvwBvGA4"
+  },
+  "year one": {
+    "id": 9,
+    "title": "Year One",
+    "body": "After being banished from their tribe, two hunter-gatherers encounter Biblical characters and eventually wind up in the city of Sodom.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FYear%20One.jpg?alt=media&token=f4fcb5ca-e073-4243-9c32-7f441585d628",
+    "key": "year on",
+    "category": "comedy",
+    "duration": "1h 37min",
+    "rate": "4,9",
+    "trailer": "Zp38qups8bI"
+  },
+  "theRidiculous6": {
+    "id": 10,
+    "title": "The Ridiculous 6",
+    "body": "An outlaw who was raised by Native Americans discovers that he has five half-brothers; together the men go on a mission to find their wayward, deadbeat dad.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FThe%20Ridiculous%206.jpg?alt=media&token=72c56d68-dc44-4689-b30c-6b42d78ef190",
+    "key": "the ridiculous",
+    "category": "comedy",
+    "duration": "1h 59min",
+    "rate": "4,8",
+    "trailer": "qUp7Qgimn38"
+  },
+  "ladies in black": {
+    "id": 11,
+    "title": "Ladies in Black",
+    "body": "Adapted from the bestselling novel by Madeleine St John, Ladies in Black is an alluring and tender-hearted comedy drama.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FLadies%20in%20black.jpg?alt=media&token=6d9d9f34-5200-4fbb-b38c-035d75551f90",
+    "key": "ladies in black",
+    "category": "comedy",
+    "duration": "1h 49min",
+    "rate": "6,7",
+    "trailer": "rd7aD7F2QCg"
+  },
+  "superbad": {
+    "id": 12,
+    "title": "Superbad",
+    "body": "Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FSuperbad.jpg?alt=media&token=58ccad2a-e3b9-44c2-83e4-5996358eb1ee",
+    "key": "superbad",
+    "category": "comedy",
+    "duration": "1h 53min",
+    "rate": "7,6",
+    "trailer": "4eaZ_48ZYog"
+  },
+  "darknest hour": {
+    "id": 13,
+    "title": "Darkest Hour",
+    "body": "In May 1940, the fate of World War II hangs on Winston Churchill, who must decide whether to negotiate with Adolf Hitler, or fight on knowing.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FDarknest%20Hour.jpg?alt=media&token=08f05a12-49a9-4934-98f9-299145255544",
+    "key": "darknest hour",
+    "category": "drama",
+    "duration": "2h 5min",
+    "rate": "7,4",
+    "trailer": "LtJ60u7SUSw"
+  },
+  "fury": {
+    "id": 14,
+    "title": "Fury",
+    "body": "A grizzled tank commander makes tough decisions as he and his crew fight their way across Germany in April, 1945.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FFury.jpg?alt=media&token=0eca8c2a-4585-4040-92a5-c387d920a040",
+    "key": "fury",
+    "category": "drama",
+    "duration": "2h 14min",
+    "rate": "7,6",
+    "trailer": "DNHuK1rteF4"
+  },
+  "defiance": {
+    "id": 15,
+    "title": "Defiance",
+    "body": "Jewish brothers in Nazi-occupied Eastern Europe escape into the Belarussian forests, where they join Russian resistance fighters.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FDefiance.jpg?alt=media&token=d4683876-3a53-4547-a4cf-40e7bb643012",
+    "key": "defiance",
+    "category": "drama",
+    "duration": "2h 17min",
+    "rate": "7,2",
+    "trailer": "yw6Rwum7zcU"
+  },
+  "the theory of everything": {
+    "id": 16,
+    "title": "The Theory of Everything",
+    "body": "A look at the relationship between the famous physicist Stephen Hawking and his wife.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FThe%20Theory%20Of%20Everything.jpg?alt=media&token=5f429063-7e8e-4e0d-967b-1721e94f3546",
+    "key": "the theory of everything",
+    "category": "drama",
+    "duration": "2h 3min",
+    "rate": "7,7",
+    "trailer": "Salz7uGp72c"
+  },
+  "12 years a slave": {
+    "id": 17,
+    "title": "12 Years a Slave",
+    "body": "In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2F12%20Years%20a%20Slave.jpg?alt=media&token=0fc7d7d8-ebc6-4614-a821-e79ac12498d5",
+    "key": "12 years a slave",
+    "category": "drama",
+    "duration": "2h 14min",
+    "rate": "8,1",
+    "trailer": "z02Ie8wKKRg"
+  },
+  "the pianist": {
+    "id": 18,
+    "title": "The Pianist",
+    "body": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FThe%20Pianist.jpg?alt=media&token=081a4097-b979-4699-a320-560a994c2d90",
+    "key": "12 years a slave",
+    "category": "drama",
+    "duration": "2h 30min",
+    "rate": "8,5",
+    "trailer": "BFwGqLa_oAo"
+  },
+  "contagion": {
+    "id": 19,
+    "title": "Contagion ",
+    "body": "Healthcare professionals, government officials and everyday people find themselves in the midst of a pandemic as the CDC works to find a cure.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FContangion.png?alt=media&token=021694d1-8151-4591-a59f-4bd91f632cc1",
+    "key": "contagion",
+    "category": "thriller",
+    "duration": "1h 46min",
+    "rate": "6,7",
+    "trailer": "4sYSyuuLk5g"
+  },
+  "angelsAndDemons": {
+    "id": 20,
+    "title": "Angels And Demons ",
+    "body": "Harvard symbologist Robert Langdon works with a nuclear physicist to solve a murder and prevent a terrorist act against the Vatican.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FAngels%20%26%20Demons.png?alt=media&token=fff59893-6552-4b00-9c97-5c764e545fb0",
+    "key": "angelsAndDemons",
+    "category": "thriller",
+    "duration": "2h 18min",
+    "rate": "6,7",
+    "trailer": "zzjv-GUEDfg"
+  },
+  "lawAbidingCitizen": {
+    "id": 21,
+    "title": "Law Abiding Citizen ",
+    "body": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FLaw%20Abiding%20Citizen.jpg?alt=media&token=8fd1edeb-0d4e-44a5-a72e-b9a740f7944d",
+    "key": "lawAbidingCitizen",
+    "category": "thriller",
+    "duration": "1h 49min",
+    "rate": "7,4",
+    "trailer": "LX6kVRsdXW4"
+  },
+  "prisoners": {
+    "id": 22,
+    "title": "Prisoners",
+    "body": "When Keller Dover's daughter and her friend go missing, he takes matters into his own hands as the police pursue multiple leads and the pressure mounts.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FPrisoners.jpg?alt=media&token=07bfad2d-53d9-43d4-8681-a8459182408e",
+    "key": "prisoners",
+    "category": "thriller",
+    "duration": "2h 33min",
+    "rate": "8,1",
+    "trailer": "bpXfcTF6iVk"
+  },
+  "thePlatform": {
+    "id": 23,
+    "title": "The PlatForm",
+    "body": "A vertical prison with one cell per level. Two people per cell. One only food platform and two minutes per day to feed from up to down. An endless nightmare trapped in The Hole.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FThe%20platform.png?alt=media&token=956c7f31-5fc8-4659-994b-06e046bbb2d5",
+    "key": "thePlatform",
+    "category": "thriller",
+    "duration": "1h 36min",
+    "rate": "7,0",
+    "trailer": "RlfooqeZcdY"
+  },
+  "redDragon": {
+    "id": 24,
+    "title": "Red Dragon",
+    "body": "A retired FBI agent with psychological gifts is assigned to help track down The Tooth Fairy, a mysterious serial killer.",
+    "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/movies%2FRed%20Dragon.jpg?alt=media&token=2d81f1ff-03ee-467f-b71a-9d477e76093f",
+    "key": "redDragon",
+    "category": "thriller",
+    "duration": "2h 4min",
+    "rate": "7,2",
+    "trailer": "Kb2WClrbrAc"
+  }
 }
