@@ -1,156 +1,159 @@
 .BackDrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255, 255,255,0.4);
-    z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.8);
+  z-index: 200;
 }
-.Modal{
-    width: 70vw;
-    height: 74vh;
-    top:10%;
-    left: 11%;
-    background-color: rgb(20, 20, 20);
-    z-index: 200;
-    position: fixed;
-    color: rgb(230, 230,230);
-    padding: 2vw 3vw 2vw 4.3vw; 
-    overflow-y: hidden;
+.Modal {
+  width: 70vw;
+  height: 74vh;
+  top: 10%;
+  left: 11%;
+  background-color: rgb(20, 20, 20);
+  z-index: 200;
+  position: fixed;
+  color: rgb(230, 230, 230);
+  padding: 2vw 3vw 2vw 4.3vw;
+  overflow-y: hidden;
 }
-.TitleDiv{
-    display: flex;
+.TitleDiv {
+  display: flex;
 }
-.Title{
-    font-size: 3.5vw;
-    font-weight: 600;
-    float: left;
-    width: 85%;
+.Title {
+  font-size: 3.5vw;
+  font-weight: 600;
+  float: left;
+  width: 85%;
 }
-.Rate{
-    width: 15%;
-    float: right;
-    font-size: 2.5vw;
-    margin: auto;
-    margin-left: 1vw;
+.Rate {
+  width: 15%;
+  float: right;
+  font-size: 2.5vw;
+  margin: auto;
+  margin-left: 1vw;
 }
-.Rate span{
-    font-size: 1.2vw;
+.Rate span {
+  font-size: 1.2vw;
 }
-.Duration{
-    display: flex;
-    font-size: 0.8vw;
-    font-weight: 300;
-    padding: 0.5vw 0 0.5vw 0vw;
+.Duration {
+  display: flex;
+  font-size: 0.8vw;
+  font-weight: 300;
+  padding: 0.5vw 0 0.5vw 0vw;
 }
-.DurationTime{
-    padding-right: 1vw;
-    margin-bottom: 5%;
+.DurationTime {
+  padding-right: 1vw;
+  margin-bottom: 5%;
 }
-.Video{
-    display: flex;
+.Video {
+  display: flex;
 }
-.Video ul{
-    list-style: none;
+.Video ul {
+  list-style: none;
 }
 .Video ul li {
-    margin-bottom: 2vw;
-    width: 100%;
+  margin-bottom: 2vw;
+  width: 100%;
 }
-.Video ul li img{
-    width: 100%;
+.Video ul li img {
+  width: 100%;
 }
-.Button{
-    margin-left: 30%;
-    width: 10vw;
-    font-size: 1vw;
-    border: solid 1px rgb(230, 230, 230);
-    padding: 1vw;
-    color: rgb(230, 230, 230);
-    background-color: rgba(150, 150, 150, 0);
+.Button {
+  margin-left: 30%;
+  width: 10vw;
+  font-size: 1vw;
+  border: solid 1px rgb(230, 230, 230);
+  padding: 1vw;
+  color: rgb(230, 230, 230);
+  background-color: rgba(150, 150, 150, 0);
 }
-.Button:hover{
-    background-color: rgba(150, 150, 150, 0.3);
-    cursor: pointer;
+.Button:hover {
+  background-color: rgba(150, 150, 150, 0.3);
+  cursor: pointer;
 }
-.Context{
-    padding: 1vw 2vw 0 2vw;
+.Context {
+  padding: 1vw 2vw 0 2vw;
 }
-.Close{
-    color: #cc0000;
+.Close {
+  color: #cc0000;
 }
-.Close:hover{
-    cursor: pointer;
+.Close:hover {
+  cursor: pointer;
 }
 
-@media (min-width : 700px) and (max-width : 900px){
-    .Video{
-        display: block;
-        padding-left: 10%;
-    }
-    .Button{
-        font-size: 2.5vw;
-    }
-    .Duration{
-        font-size: 1.6vw;
-    }    
-    .Video ul li img{
-        display: none;
-    }
+@media (min-width: 700px) and (max-width: 900px) {
+  .Video {
+    display: block;
+    padding-left: 10%;
+  }
+  .Button {
+    font-size: 2.5vw;
+  }
+  .Duration {
+    font-size: 1.6vw;
+  }
+  .Video ul li img {
+    display: none;
+  }
 }
-@media (min-width : 431px) and (max-width : 700px){
-    .Modal{
-        left : 2%;
-        width: 88%;
-    }
-    .Video{
-        display: block;
-        padding-left: 1%;
-    }
-    .Button{
-        font-size: 2.5vw;
-    }
-    .Duration{
-        font-size: 1.6vw;
-    }    
-    .Video ul li img{
-        display: none;
-    }
+@media (min-width: 431px) and (max-width: 700px) {
+  .Modal {
+    left: 2%;
+    width: 88%;
+  }
+  .Video {
+    display: block;
+    padding-left: 1%;
+  }
+  .Button {
+    font-size: 2.5vw;
+  }
+  .Duration {
+    font-size: 1.6vw;
+  }
+  .Video ul li img {
+    display: none;
+  }
 }
-@media (max-width : 430px){
-    .Modal{
-        left: 0;
-        width: 93%;
-    }
-    .Video{
-        padding: 0;
-        margin-left: -4%;
-        display: block;
-    }
-    .Title{
-        font-size: 5vw;
-    }
-    .Duration{
-        font-size: 2.2vw;
-    }
-    .Rate{
-        font-size: 5vw;
-    }
-    .Rate span{
-        font-size: 2.5vw;
-    }
-    .Button{
-        margin-left:32%;
-        font-size: 4vw;
-        width: 25%;
-    }
-    .Video ul li img{
-        display: none;
-    }
+@media (max-width: 430px) {
+  .BackDrop {
+    height: 100%;
+  }
+  .Modal {
+    left: 0;
+    width: 93%;
+  }
+  .Video {
+    padding: 0;
+    margin-left: -4%;
+    display: block;
+  }
+  .Title {
+    font-size: 5vw;
+  }
+  .Duration {
+    font-size: 2.2vw;
+  }
+  .Rate {
+    font-size: 5vw;
+  }
+  .Rate span {
+    font-size: 2.5vw;
+  }
+  .Button {
+    margin-left: 32%;
+    font-size: 4vw;
+    width: 25%;
+  }
+  .Video ul li img {
+    display: none;
+  }
 }
-@media (max-width : 429px){
-    .Modal {
-        height: 80vh;
-    }
+@media (max-width: 429px) {
+  .Modal {
+    height: 80vh;
+  }
 }

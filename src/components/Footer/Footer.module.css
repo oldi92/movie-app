@@ -2,7 +2,8 @@
   color: #808080;
   padding: 5vw 2vw 5vw 2vw;
   text-align: center;
-  margin-left: -7vw;
+  margin-left: -6vw;
+  font-size: 2vw;
 }
 .Main {
   display: inline-flex;
@@ -12,6 +13,7 @@
   display: inline-flex;
   margin: auto;
   margin-left: -2vw;
+  font-size: 1.2vw;
 }
 .FooterNav li {
   padding-left: 0.7vw;
@@ -19,12 +21,30 @@
   border-right: solid 1px #808080;
 }
 .FooterNav li:hover {
+  color: rgb(230, 230, 230);
   cursor: pointer;
 }
 .FooterNav li:last-child {
   border-right: none;
 }
 .Copyright {
-  margin-top: 2vw;
+  margin-top: 1vw;
   font-size: 0.8vw;
+}
+.NavLink {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 699px) {
+  .Copyright {
+    font-size: 1.4vw;
+  }
+  .FooterNav {
+    margin-left: -10vw;
+    font-size: 2.5vw;
+  }
+  .FooterNav li {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
 }

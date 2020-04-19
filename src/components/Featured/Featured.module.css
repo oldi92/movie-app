@@ -5,6 +5,7 @@
   margin-left: -4vw;
   margin-bottom: 1vw;
   padding-left: 4vw;
+  z-index: 100;
 }
 .Title {
   font-size: 2.5vw;
@@ -39,7 +40,7 @@
     height: 50vh;
   }
   .Title {
-    padding-top: 15%;
+    padding-top: 10vh;
     font-size: 3vw;
   }
   .Paragraph {

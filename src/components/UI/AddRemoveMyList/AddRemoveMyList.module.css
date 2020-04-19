@@ -1,0 +1,13 @@
+.MyListButton {
+  font-weight: 600;
+  font-size: 1vw;
+  background-color: rgba(20, 20, 20, 0);
+  border: none;
+  color: rgb(230, 230, 230);
+}
+.MyListButton:hover {
+  color: rgb(151, 151, 151);
+  text-shadow: 0.5px 0.5px 0.5px #2e2e2e;
+  /* color: rgb(150, 150, 150); */
+  cursor: pointer;
+}

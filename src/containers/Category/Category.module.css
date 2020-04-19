@@ -1,0 +1,28 @@
+.CategoryContainer {
+  background-color: rgb(20, 20, 20);
+  padding: 3vw 5vw 0 0;
+  overflow-y: hidden;
+}
+.Category {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  column-gap: 1vw;
+  row-gap: 1vw;
+}
+.Title {
+  color: rgb(230, 230, 230);
+  font-size: 3vw;
+  padding-bottom: 2vw;
+}
+
+@media (max-width: 600px) {
+  .Category {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    row-gap: 2vw;
+  }
+  .CategoryContainer {
+    padding-left: 1vw;
+    padding-right: 6vw;
+  }
+}

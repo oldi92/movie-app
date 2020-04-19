@@ -1,0 +1,66 @@
+.CategoryList {
+  position: relative;
+}
+.CategoryList:hover {
+  cursor: pointer;
+}
+
+.CategoryList img {
+  width: 100%;
+  height: auto;
+}
+.Paragraph {
+  pointer-events: none;
+  text-align: left;
+  width: 95.5%;
+  height: 90%;
+  margin-top: -45%;
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  padding: 1vw;
+  color: white;
+  z-index: 30;
+  transition: all 0.2s ease-in;
+  background-color: rgba(20, 20, 20, 0.8);
+  cursor: pointer;
+}
+.Paragraph h3 {
+  padding-top: 2vw;
+}
+.CategoryList:hover .Paragraph {
+  pointer-events: all;
+  opacity: 1;
+  margin-top: -58%;
+  padding: 1vw;
+  color: white;
+  z-index: 30;
+  transition: all 0.3s ease-in;
+  text-shadow: 2px 2px 2px #202020;
+  cursor: pointer;
+}
+.CategoryList button {
+  position: relative;
+  font-size: 1vw;
+  border: solid 1px rgb(230, 230, 230);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: rgb(230, 230, 230);
+  padding: 0.5vw 1vw 0.5vw 1vw;
+  margin-right: 0.7vw;
+  text-align: center;
+}
+.CategoryList button:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+@media (max-width: 600px) {
+  .Paragraph {
+    width: 98%;
+    height: 97%;
+  }
+  .CategoryList button {
+    font-size: 3vw;
+    padding: 1vw 2vw 1vw 2vw;
+  }
+}

@@ -10,8 +10,6 @@ class Home extends Component {
     dataState: [],
   };
 
-  componentDidMount() {}
-
   render() {
     return (
       <div className={classes.Home}>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Categories from "../Categories/Categories";
+import CategoriesPreview from "./CategoriesPreview/CategoriesPreview";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
 import Modal from "../UI/Modal/Modal";
 
@@ -53,7 +53,7 @@ class JsonConverter extends Component {
 
     let categoryActionMovies = actionMoviesFilter.map((element, i) => {
       return (
-        <Categories
+        <CategoriesPreview
           onClick={() =>
             this.modalHandler(
               element.title, //passing props for modal component
@@ -69,6 +69,9 @@ class JsonConverter extends Component {
           title={element.title}
           image={element.img}
           body={element.body}
+          duration={element.duration}
+          category={element.category}
+          rate={element.rate}
         />
       );
     });

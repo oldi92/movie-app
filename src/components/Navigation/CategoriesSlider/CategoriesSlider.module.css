@@ -5,10 +5,18 @@
   padding: 0;
   display: flex;
   flex-flow: column;
+  list-style: none;
+}
+.CategoriesSlider li {
+  text-shadow: 1px 1px 2px rgba(32, 32, 32, 0.94);
 }
 .CategoriesSlider li:hover {
   border-radius: 5px;
   transition: all 0.2s;
-  color: rgb(20, 20, 20);
+  color: rgb(110, 110, 110);
   cursor: pointer;
+}
+.NavLink {
+  text-decoration: none;
+  color: inherit;
 }

@@ -23,7 +23,7 @@
   },
   "thePlatform": {
     "id": 3,
-    "title": "The PlatForm",
+    "title": "The Platform",
     "body": "A vertical prison with one cell per level. Two people per cell. One only food platform and two minutes per day to feed from up to down. An endless nightmare trapped in The Hole.",
     "img": "https://firebasestorage.googleapis.com/v0/b/movies-app-a63b8.appspot.com/o/featured%2FThe%20Platform%202019.jpg?alt=media&token=d12733ce-8c00-4ee6-b255-9c3043da835e",
     "key": "thePlatform",
