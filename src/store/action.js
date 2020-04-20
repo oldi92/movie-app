@@ -74,3 +74,37 @@ export const removeMyListNumber = () => {
     type: actionTypes.REMOVEMYLISTNUMBER,
   };
 };
+
+export const searchDivToggle = (booleanToggle) => {
+  return {
+    type: actionTypes.SEARCHDIVTOGGLE,
+    booleanToggle: booleanToggle,
+  };
+};
+
+export const modalToggle = () => {
+  return {
+    type: actionTypes.MODALTOGGLE,
+  };
+};
+
+export const jsonArrayConverter = () => {
+  return (dispatch) => {
+    /* This function receive the json object and convert itno array */
+    const jsonFile = require("../data/movies.json");
+    const jsonFileArray = Object.keys(jsonFile).map((key, value) => {
+      return jsonFile[key];
+    });
+    console.log("DISPATCJ JSON ", jsonFileArray);
+    dispatch(jsonArrayConverterSuccess(jsonFileArray));
+    /** we pass the (json array) to jsonArrayConverterSuccess function */
+  };
+};
+
+export const jsonArrayConverterSuccess = (jsonArray) => {
+  /** and here finally we pass the json array to the reducer with action name jsonArray */
+  return {
+    type: actionTypes.JSONARRAYCONVERTERSUCCESS,
+    jsonArray: jsonArray,
+  };
+};

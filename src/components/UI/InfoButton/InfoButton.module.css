@@ -1,0 +1,28 @@
+.Button {
+  position: relative;
+  font-size: 1vw;
+  border: solid 1px rgb(230, 230, 230);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: rgb(230, 230, 230);
+  padding: 0.5vw 1vw 0.5vw 1vw;
+  margin-right: 0.7vw;
+  text-align: center;
+}
+.Button:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+@media (max-width: 500px) {
+  .Button {
+    font-size: 3.5vw;
+    margin-right: 2vw;
+    padding: 0.3vw 2vw 0.3vw 2vw;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .Button {
+    font-size: 2vw;
+  }
+}

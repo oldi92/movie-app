@@ -28,6 +28,9 @@
   float: left;
   width: 85%;
 }
+.Star {
+  margin-top: 0.5vw;
+}
 .Rate {
   width: 15%;
   float: right;
@@ -98,6 +101,10 @@
   .Video ul li img {
     display: none;
   }
+  .Star {
+    font-size: 1.3vw;
+    margin-top: 0.5vw;
+  }
 }
 @media (min-width: 431px) and (max-width: 700px) {
   .Modal {
@@ -117,6 +124,10 @@
   .Video ul li img {
     display: none;
   }
+  .Star {
+    font-size: 1.3vw;
+    margin-top: 1.5vw;
+  }
 }
 @media (max-width: 430px) {
   .BackDrop {
@@ -125,13 +136,15 @@
   .Modal {
     left: 0;
     width: 93%;
+    height: 80vh;
   }
   .Video {
     padding: 0;
-    margin-left: -4%;
+    margin-left: -2%;
     display: block;
   }
   .Title {
+    width: 70%;
     font-size: 5vw;
   }
   .Duration {
@@ -144,16 +157,16 @@
     font-size: 2.5vw;
   }
   .Button {
-    margin-left: 32%;
+    margin-left: -60%;
     font-size: 4vw;
-    width: 25%;
+    padding: 2vw;
+    width: 100%;
   }
   .Video ul li img {
     display: none;
   }
-}
-@media (max-width: 429px) {
-  .Modal {
-    height: 80vh;
+  .Star {
+    font-size: 1.6vw;
+    margin-top: 1.5vw;
   }
 }

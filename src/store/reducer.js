@@ -5,6 +5,9 @@ const initialState = {
   myList: 0,
   myListMovies: [],
   buttonToggle: [],
+  searchDivToggle: false,
+  modalToggle: false,
+  jsonArray: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -54,6 +57,21 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         myList: state.myList - 1,
+      };
+    case actionTypes.SEARCHDIVTOGGLE:
+      return {
+        ...state,
+        searchDivToggle: action.booleanToggle,
+      };
+    case actionTypes.MODALTOGGLE:
+      return {
+        ...state,
+        modalToggle: !state.modalToggle,
+      };
+    case actionTypes.JSONARRAYCONVERTERSUCCESS:
+      return {
+        ...state,
+        jsonArray: action.jsonArray,
       };
     default:
       return state;

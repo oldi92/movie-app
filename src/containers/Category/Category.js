@@ -10,7 +10,6 @@ import Featured from "../../components/Featured/Featured";
 
 class Category extends Component {
   state = {
-    movieArray: [],
     filteredArray: [],
     modalShow: false,
     modalDiv: [],
@@ -18,9 +17,8 @@ class Category extends Component {
     randomFeaturedMovie: "",
   };
   componentDidMount() {
-    console.log("COMPONENT DID MOUNT");
-    this.jsonFileFunction();
     this.movieArrayFilter();
+    console.log("[CATEGORY]");
   }
   componentDidUpdate() {
     if (!this.props.category) {
@@ -45,24 +43,11 @@ class Category extends Component {
   };
 
   movieArrayFilter = () => {
-    const copyMoviesArray = [...this.state.movieArray];
-    const copyMoviesFilter = copyMoviesArray.filter(
+    const copyMoviesFilter = this.props.jsonArray.filter(
       (element) => element.category === this.props.category
     );
     this.setState({ filteredArray: copyMoviesFilter });
     this.randomFeaturedMovieGenerator();
-  };
-
-  jsonFileFunction = () => {
-    const jsonFile = require("../../data/featured/movies.json");
-    const jsonFileArray = Object.keys(jsonFile).map((key, value) => {
-      return jsonFile[key];
-    });
-    const copyMoviesArray = [...jsonFileArray];
-
-    this.setState({ movieArray: copyMoviesArray }, () =>
-      this.movieArrayFilter()
-    );
   };
 
   modalHandler = (title, trailer, rate, duration, body, category, image) => {
@@ -130,6 +115,7 @@ class Category extends Component {
 const mapStateToProps = (state) => {
   return {
     category: state.category,
+    jsonArray: state.jsonArray,
   };
 };
 

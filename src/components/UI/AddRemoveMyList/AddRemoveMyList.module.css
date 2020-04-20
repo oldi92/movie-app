@@ -11,3 +11,9 @@
   /* color: rgb(150, 150, 150); */
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .MyListButton {
+    font-size: 3vw;
+  }
+}

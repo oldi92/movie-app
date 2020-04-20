@@ -7,8 +7,12 @@ import classes from "./MyList.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
 import * as actions from "../../store/action";
+import DropBox from "../../components/UI/DropBox/DropBox";
 
 class MyList extends Component {
+  componentDidMount() {
+    console.log("[MYLIST]");
+  }
   render() {
     let myListDiv = [];
     if (this.props.myListMovies.length === 0) {
@@ -24,7 +28,6 @@ class MyList extends Component {
             <div className={classes.RemoveX}>
               <FontAwesomeIcon icon={faTimes} size="1x" />
             </div>
-            <div className={classes.Remove}>Remove</div>
           </div>
 
           <div style={{ display: "flex" }}>
@@ -56,6 +59,10 @@ class MyList extends Component {
     console.log(this.props.myListMovies.length);
     return (
       <Auxiliary>
+        <DropBox
+          show={this.props.searchDivToggle}
+          onClick={this.props.onSearchDivToggle}
+        />
         {this.props.myListMovies.length > 0 ? (
           <ul className={classes.MyList}>{myListDiv}</ul>
         ) : (
@@ -79,11 +86,13 @@ class MyList extends Component {
 const mapStateToProps = (state) => {
   return {
     myListMovies: state.myListMovies,
+    searchDivToggle: state.searchDivToggle,
   };
 };
 const mapDispatchToProps = (dispatch) => {
   return {
     onRemoveMyList: (title) => dispatch(actions.removeMyList(title)),
+    onSearchDivToggle: () => dispatch(actions.searchDivToggle()),
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(MyList);

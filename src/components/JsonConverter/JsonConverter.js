@@ -3,27 +3,17 @@ import React, { Component } from "react";
 import CategoriesPreview from "./CategoriesPreview/CategoriesPreview";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
 import Modal from "../UI/Modal/Modal";
+import { connect } from "react-redux";
 
 class JsonConverter extends Component {
   state = {
     modalDiv: "",
     modalShow: false,
-    movieArray: [],
-    movieCategory: this.props.jsonFile,
   };
 
   componentDidMount() {
-    this.jsonFileFunction();
+    console.log("[CATEGORY PREVIEW]");
   }
-
-  jsonFileFunction = () => {
-    const jsonFile = require(`../../data/featured/${this.state.movieCategory}.json`);
-    const jsonFileArray = Object.keys(jsonFile).map((key, value) => {
-      return jsonFile[key];
-    });
-    const copyMoviesArray = [...jsonFileArray];
-    this.setState({ movieArray: copyMoviesArray });
-  };
 
   modalHandler = (title, trailer, rate, duration, body, category, image) => {
     const copyModalDiv = (
@@ -39,7 +29,6 @@ class JsonConverter extends Component {
         image={image}
       />
     );
-
     this.setState({
       modalShow: !this.state.modalShow,
       modalDiv: copyModalDiv,
@@ -47,7 +36,7 @@ class JsonConverter extends Component {
   };
 
   render() {
-    const actionMoviesFilter = this.state.movieArray.filter(
+    const actionMoviesFilter = this.props.jsonArray.filter(
       (element) => element.category === this.props.category
     );
 
@@ -85,4 +74,10 @@ class JsonConverter extends Component {
   }
 }
 
-export default JsonConverter;
+const mapStateToProps = (state) => {
+  return {
+    jsonArray: state.jsonArray,
+  };
+};
+
+export default connect(mapStateToProps, null)(JsonConverter);

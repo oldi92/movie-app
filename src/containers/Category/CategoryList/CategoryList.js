@@ -2,8 +2,9 @@ import React from "react";
 
 import classes from "./CategoryList.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faInfo } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import AddRemoveMyList from "../../../components/UI/AddRemoveMyList/AddRemoveMyList";
+import InfoButton from "../../../components/UI/InfoButton/InfoButton";
 
 const CategoryList = (props) => {
   return (
@@ -13,7 +14,7 @@ const CategoryList = (props) => {
         <h3>{props.title}</h3>
         <p>{props.body}</p>
         <div>
-          <button>
+          <button className={classes.CategoryListButton}>
             <FontAwesomeIcon
               icon={faPlay}
               size="1x"
@@ -21,14 +22,7 @@ const CategoryList = (props) => {
             />
             Play
           </button>
-          <button onClick={props.onClick}>
-            <FontAwesomeIcon
-              icon={faInfo}
-              size="1x"
-              style={{ paddingRight: "0.5vw" }}
-            />
-            Info
-          </button>
+          <InfoButton onClick={props.onClick} />
           <AddRemoveMyList
             title={props.title}
             body={props.body}

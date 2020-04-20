@@ -98,22 +98,78 @@
 }
 .SearchDiv {
   position: absolute;
-  color: black;
-  background-color: white;
+  color: rgb(230, 230, 230);
+  background-color: rgb(43, 43, 43);
   width: 90%;
   margin-top: 6vw;
-  padding: 1vw;
+  padding: 0vw 2vw 2vw 2vw;
   border-radius: 3px;
 }
-.Triangle {
-  margin-right: 4vw;
-  float: right;
-  width: 0;
-  margin-top: -3vw;
-  border-bottom: solid 30px rgb(250, 250, 250);
-  border-left: solid 30px transparent;
-  border-right: solid 30px transparent;
+.SearchDiv ul {
+  overflow-y: auto;
+  max-height: 70vh;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+.SearchDiv ul li {
+  background-color: rgb(20, 20, 20);
+  padding: 1vw;
+  margin-bottom: 2vw;
+  display: flex;
+}
+.SearchDiv ul li:last-child {
+  margin-bottom: 0;
+}
+.SearchDiv ul li img {
+  height: 7vw;
+  width: auto;
+}
+.SearchDivParagraph {
+  margin-right: 3vw;
+  width: 50%;
+}
+.SearchDivTitle {
+  font-size: 2vw;
+  padding-right: 2vw;
+}
+.SearchDivRate {
+  font-size: 1.2vw;
+  margin-top: 0.5vw;
+}
+.SearchDivBody {
+  font-size: 1.1vw;
+  margin-top: 0.5vw;
+}
+.SearchDivButton {
+  display: flex;
+  margin-left: 1vw;
+  font-size: 1vw;
+  border: solid 1px rgb(230, 230, 230);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: rgb(230, 230, 230);
+  padding: 1vw;
+  text-align: center;
+  height: 3vw;
+}
+.SearchDivButton:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+.SearcDivAddRemoveMyList {
+  padding-left: 4vw;
+}
+.SearchDivClose {
+  margin-right: 1vw;
+  margin-top: 1vw;
+  font-size: 2vw;
+  float: right;
+  color: rgb(212, 0, 0);
+}
+.SearchDivClose:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   .Navigation {
     height: 10vw;
@@ -124,26 +180,53 @@
     padding-right: 0;
   }
   .NavigationUl {
-    margin: 2vw 0 0 3vw;
+    margin: 2vw 0 0 -5vw;
   }
   .NavigationUl li {
     font-size: 4vw;
-    margin: 2vw 4vw 0 3vw;
+    margin: 2vw 5vw 0 0vw;
   }
   .NavigationUl li:hover {
     width: 100%;
   }
   .Search {
-    margin-left: 2vw;
-    width: 27vw;
-    height: 100%;
-    margin-top: 3vw;
+    margin-left: -4vw;
+    width: 35vw;
+    margin-top: 2vw;
   }
-  .Search div {
-    padding: 1vw 3vw 1vw 1.5vw;
+  .Input {
+    padding: 0;
   }
-  .Search div input {
+  .FontAwesomeIcon {
+    font-size: 3.3vw;
+    padding: 0.7vw 0.6vw 0 1vw;
+  }
+  .Input input {
+    margin-top: 0;
     font-size: 3vw;
+  }
+  .SearchDiv ul li img {
+    height: 15vw;
+    width: auto;
+    margin-right: 2vw;
+  }
+  .SearchDivTitle {
+    font-size: 3vw;
+  }
+  .SearchDivRate {
+    font-size: 2.4vw;
+  }
+  .SearchDivBody {
+    margin-top: 1.5vw;
+    font-size: 2vw;
+  }
+  .SearchDivButton {
+    margin-top: 1vw;
+    font-size: 3vw;
+    height: 100%;
+  }
+  .SearcDivAddRemoveMyList {
+    padding-left: 2vw;
   }
   .DivRight {
     margin-left: 11.5vw;
@@ -152,6 +235,13 @@
   }
   .NavigationUl li:first-child {
     margin-left: 0vw;
+  }
+  .SearchDivClose {
+    padding: 1.5vw;
+    font-size: 5vw;
+  }
+  .SearchDiv {
+    margin-top: 15vw;
   }
 }
 

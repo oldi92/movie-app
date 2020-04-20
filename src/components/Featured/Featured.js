@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
-import featured from "../../data/featured/featured.json";
+import featured from "../../data/featured.json";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
 import Modal from "../UI/Modal/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faInfo } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import classes from "./Featured.module.css";
+import InfoButton from "../UI/InfoButton/InfoButton";
+import * as actions from "../../store/action";
 
 class Featured extends Component {
   state = {
@@ -15,6 +18,7 @@ class Featured extends Component {
   };
 
   componentDidMount() {
+    console.log("[FEATURED]");
     this.featuredHanlder();
   }
 
@@ -24,14 +28,15 @@ class Featured extends Component {
       return featured[key];
     });
     const copyData = [...data];
+
     this.setState({ dataState: copyData });
   };
 
   modalHandler = (title, trailer, rate, duration, body, category, image) => {
     const copyModalDiv = (
       <Modal
-        show={this.state.modalShow}
         onClickModal={() => this.modalHandler()}
+        show={this.props.modalToggle}
         title={title}
         trailer={trailer}
         rate={rate}
@@ -41,22 +46,20 @@ class Featured extends Component {
         image={image}
       />
     );
-
+    this.props.onModalToggle();
     this.setState({
-      modalShow: !this.state.modalShow,
       modalDiv: copyModalDiv,
     });
   };
 
   render() {
-    // Creating the fetured div with loop chosing the money Hesi movie
+    // Creating the fetured div with loop chosing the money Heist movie
     let copyfeaturedDiv = [];
     let featuredDiv = "";
     const copyData = this.state.dataState;
     copyfeaturedDiv = copyData.filter(
       (element) => element.key === this.props.movieName
     );
-    console.log(copyData);
     copyfeaturedDiv.map((element) => {
       return (featuredDiv = (
         <div
@@ -68,13 +71,12 @@ class Featured extends Component {
             backgroundSize: "cover",
           }}
         >
-          {/* <img src={element.img} alt='Featured images' /> */}
           <div className={classes.Title}>{element.title}</div>
           <p className={classes.Paragraph}>{element.body}</p>
-          <button>
+          <button className={classes.FeaturedButton}>
             <FontAwesomeIcon icon={faPlay} size="1x" /> Play
           </button>
-          <button
+          <InfoButton
             onClick={() =>
               this.modalHandler(
                 element.title, //passing props for modal component
@@ -86,14 +88,7 @@ class Featured extends Component {
                 element.img
               )
             }
-          >
-            <FontAwesomeIcon
-              icon={faInfo}
-              size="1x"
-              style={{ paddingRight: "0.5vw" }}
-            />
-            Info
-          </button>
+          />
         </div>
       ));
     });
@@ -107,4 +102,16 @@ class Featured extends Component {
   }
 }
 
-export default Featured;
+const mapStateToProps = (state) => {
+  return {
+    modalToggle: state.modalToggle,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onModalToggle: () => dispatch(actions.modalToggle()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Featured);

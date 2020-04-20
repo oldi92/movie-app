@@ -21,6 +21,9 @@
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     row-gap: 2vw;
   }
+  .Title {
+    font-size: 5vw;
+  }
   .CategoryContainer {
     padding-left: 1vw;
     padding-right: 6vw;

@@ -1,8 +1,10 @@
 import React from "react";
+
 import classes from "./CategoriesPreview.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfo, faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import AddRemoveMyList from "../../UI/AddRemoveMyList/AddRemoveMyList";
+import InfoButton from "../../UI/InfoButton/InfoButton";
 
 const Categories = (props) => {
   return (
@@ -20,14 +22,7 @@ const Categories = (props) => {
             />
             Play
           </button>
-          <button onClick={props.onClick} className={classes.Buttons}>
-            <FontAwesomeIcon
-              icon={faInfo}
-              size="1x"
-              style={{ paddingRight: "0.5vw" }}
-            />
-            Info
-          </button>
+          <InfoButton onClick={props.onClick} />
           <AddRemoveMyList
             title={props.title}
             body={props.body}
