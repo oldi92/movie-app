@@ -9,6 +9,7 @@ Movie application, a simple demonstration of front end application where you can
 <h3>Built with</h3>
 <ul>
 <li>React</li> 
+<li>Redux</li> 
 <li>Html</li> 
 <li>Es6</li>
 <li>Css</li> 
