@@ -18,7 +18,7 @@
 
 @media (max-width: 600px) {
   .Category {
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
     row-gap: 2vw;
   }
   .Title {
