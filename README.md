@@ -1,12 +1,14 @@
 <h2>MOVIE APP</h2> <br/>
 
-<ul>Instructions
+<ul>
+  <h3>Instructions</h3>
   <li>git  clone https://github.com/oldi92/movie-app.git</li>
   <li>cd movie-app</li>
   <li>npm install</li> 
   <li>npm start</li>
   <li>visit http://localhost:3000/</li>
 </ul>
+<hr/>
 
 
 Live Demo --> https://movies-app-a63b8.web.app/
